@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .text {
+            color: darkslategrey;
+        }
+
+        .code {
+            font-weight: bold;
+            color: #e02140;
+
+        }
+
+        .imgDoc {
+            width: 100px;
+
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .hello {
+            margin-left: 20px;
+        }
+
+        .card-body {
+            padding: 1px;
+            background: #fff;
+        }
+
+        .card {
+            width: 50%;
+            border-radius: 10px;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 30px;
+            -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) inset;
+            -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) inset;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23) inset;
+            border: #e02140 solid 1px;
+            padding: 20px;
+            background-color: #f2f0f0;
+        }
+
+        @media only screen and (max-width: 400px) {
+            .card {
+                width: 90%;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+                padding: 5px;
+                margin-left: 3%;
+                margin-right: 5%;
+                margin-top: 30px;
+                background-color: #d4cfcf;
+            }
+
+            .imgDoc {
+                width: 80px;
+                margin-left: 10px;
+            }
+
+            .container {
+                display: block;
+                width: 100%;
+            }
+
+            .hello {
+                margin-left: 10px;
+            }
+
+            .text {
+                color: darkslategrey;
+
+            }
+
+            .welcome {
+                color: darkslategrey;
+
+            }
+
+            .code {
+                font-weight: bold;
+                color: #e02140;
+                white-space: pre
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-body">
+        <div class="card">
+            <div class="container">
+                <img class="imgDoc"
+                    src="https://firebasestorage.googleapis.com/v0/b/treinamento-militar.appspot.com/o/logo.png?alt=media&token=be4faf9d-6f58-4c92-b1de-0bc9abf8aa3f"
+                    alt="Be The Hero" title="Be The Hero" />
+                <div class="hello">
+                    <h2 class="welcome">Olá</h2>
+                    <h2 class="text">Este é o seu ID de acesso <strong class="code">{{name}}</strong></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

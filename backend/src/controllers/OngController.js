@@ -19,7 +19,7 @@ module.exports = {
             .count()
         
         
-        //if(ongs['count(*)'] > 0) return res.json({message: `Já existe uma conta com esse e-mail` })
+        if(ongs['count(*)'] > 0) return res.json({message: `Já existe uma conta com esse e-mail` })
         
         const id = generateUniqueId()
         
